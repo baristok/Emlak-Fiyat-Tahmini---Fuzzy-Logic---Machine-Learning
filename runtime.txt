@@ -1,0 +1,2 @@
+# runtime.txt içeriği
+python-3.11.8

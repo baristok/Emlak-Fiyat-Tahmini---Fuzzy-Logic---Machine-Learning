@@ -284,6 +284,11 @@ async def get_isitma_tipleri():
         }
     }
 
+@app.post("/ping")
+async def keep_alive():
+    # Basit bir yanıt döner, bu endpoint API'nin boşa düşmemesi için çağrılır.
+    return {"message": "API is alive"}
+
 
 if __name__ == "__main__":
     print("\n" + "="*60)
